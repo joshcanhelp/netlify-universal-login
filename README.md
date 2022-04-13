@@ -1,8 +1,10 @@
 # Auth0 Universal Login customization using Netlify
 
-This repo is a proof-of-concept using Netlify to customize the Auth0 Universal Login page. This will push CSS and JS asset files to Netlify for hosting, then push a new template to your Auth0 tenant. This method works with any hosted asset file, whether that's Netlify, S3, or your own CDN.
+This repo is a proof-of-concept using Netlify to customize the Auth0 Universal Login page. This will push CSS and JS asset files to Netlify for hosting, then push a new template to your Auth0 tenant. Netlify, in this case, is just used to host a static assets. This method works with any hosted asset file, whether that's Netlify, S3, or your own CDN.
 
 ## Getting it Working
+
+Note that you will need to have a [custom domain](https://auth0.com/docs/customize/custom-domains) set up for your tenant and must load the login screen on your custom domain (not the `*.auth0.com` one) in order to see the changes. 
 
 ### 1. Set the new Universal Login form
 
@@ -59,7 +61,7 @@ We're going to setup a connection to the Management API of your tenant by using 
 
 ### 7. Test it out
 
-Go to **Authentication** > **Authentication Profile** in the [dashboard](https://manage.auth0.com/select-tenant?path=/authentication-profiles) for the tenant you're using here and click the **Try** button. You should see your changes live!
+Log in using a test application on your custom domain and you should see your changes live!
 
 ## References
 
